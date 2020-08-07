@@ -19,7 +19,7 @@
     "bugs": {
         "url": "https://github.com/Ahmad-Sawalqeh/arrange-game/issues"
     },
-    "homepage": "https://ahmad-sawalqeh.github.io/arrange-game/",
+    "homepage": "https://ahmad-sawalqeh.github.io/arrange-game",
     "dependencies": {
         "gh-pages": "^3.1.0",
         "react": "^16.13.1",
