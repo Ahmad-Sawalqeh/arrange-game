@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import "./styles.css";
 
@@ -43,10 +43,6 @@ function App() {
     const [moves, setMoves] = useState(0);
     const [timer, setTimer] = useState(initialTimer);
     let interval;
-   
-    useEffect(() => {
-        return () => clearInterval(interval)
-    }, [])
 
     const { one, two, three, four, five, six, seven, eight } = state;
 
@@ -395,7 +391,7 @@ function App() {
                         <Row>
                             <div className = "orginal">
                                 <h2>Original Image</h2>
-                                <img src='https://picsum.photos/600'  />
+                                <img src='https://picsum.photos/600' alt='random Image from picsum website' />
                             </div>
                         </Row>
                     </Col>
