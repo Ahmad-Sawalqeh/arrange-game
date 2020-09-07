@@ -42,7 +42,6 @@ function App() {
     const [state, setState] = useState(initialState);
     const [moves, setMoves] = useState(0);
     const [timer, setTimer] = useState(initialTimer);
-    let interval;
 
     const { one, two, three, four, five, six, seven, eight } = state;
 
@@ -61,7 +60,7 @@ function App() {
 
     const setOurState = () => {
         if(!timer.isActive) {
-            interval = setInterval(() => {
+            setInterval(() => {
                 setTimer(prvTimer => ({ ...prvTimer, isActive: true , seconds : prvTimer.seconds + 1 }))
             }, 1000);
         }
@@ -391,7 +390,7 @@ function App() {
                         <Row>
                             <div className = "orginal">
                                 <h2>Original Image</h2>
-                                <img src='https://picsum.photos/600' alt='random Image from picsum website' />
+                                <img src='https://picsum.photos/600' alt='random picsum.photos website' />
                             </div>
                         </Row>
                     </Col>
