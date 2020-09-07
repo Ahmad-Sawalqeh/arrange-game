@@ -7,11 +7,48 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    color: #000;
+    background-image: linear-gradient(35deg, rgba(253, 253, 253, 0.03) 0%, rgba(253, 253, 253, 0.03) 53%,rgba(109, 109, 109, 0.03) 53%, rgba(109, 109, 109, 0.03) 59%,rgba(228, 228, 228, 0.03) 59%, rgba(228, 228, 228, 0.03) 66%,rgba(42, 42, 42, 0.03) 66%, rgba(42, 42, 42, 0.03) 95%,rgba(165, 165, 165, 0.03) 95%, rgba(165, 165, 165, 0.03) 100%),linear-gradient(205deg, rgba(62, 62, 62, 0.03) 0%, rgba(62, 62, 62, 0.03) 31%,rgba(200, 200, 200, 0.03) 31%, rgba(200, 200, 200, 0.03) 41%,rgba(30, 30, 30, 0.03) 41%, rgba(30, 30, 30, 0.03) 47%,rgba(151, 151, 151, 0.03) 47%, rgba(151, 151, 151, 0.03) 60%,rgba(95, 95, 95, 0.03) 60%, rgba(95, 95, 95, 0.03) 100%),linear-gradient(30deg, rgba(7, 7, 7, 0.03) 0%, rgba(7, 7, 7, 0.03) 19%,rgba(63, 63, 63, 0.03) 19%, rgba(63, 63, 63, 0.03) 33%,rgba(175, 175, 175, 0.03) 33%, rgba(175, 175, 175, 0.03) 37%,rgba(244, 244, 244, 0.03) 37%, rgba(244, 244, 244, 0.03) 60%,rgba(177, 177, 177, 0.03) 60%, rgba(177, 177, 177, 0.03) 100%),linear-gradient(90deg, rgb(162, 162, 162),rgb(229, 229, 229));
 }
 
-.App {
-    width: 600px;
-    height: 600px;
+.bg{
+    color: #fff;
+    background-color: #555;
+    /* border: 1px solid #000; */
+    border-radius: 5px;;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.move, .time{
+    font-size: 20px;
+}
+
+img{
+    padding: 5px;
+    width: 500px;
+    height: 500px;    
+    outline: 2px solid #000;
+    margin: 0 auto;
+}
+
+.orginal{
+    text-align: center;
+    padding: 25px 0;
+}
+
+.puzzel-container{
+    padding: 5px;
+    width: 620px;
+    outline: 2px solid #000;
+}
+
+.puzzel {
+    width: 610px;
+    height: 610px;
     position: relative;
 }
 
@@ -19,49 +56,59 @@ body {
     width: 200px;
     height: 200px;
     position: absolute;
-    display: flex;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 0px 8px 0px #000 inset;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3px;
-    cursor: pointer;
+    font-size: 3px; */
 }
 
 .one {
     background: url("https://picsum.photos/600");
     background-position: top left;
+    outline: 1px solid #000;
 }
 
 .two {
     background: url("https://picsum.photos/600");
     background-position: top center;
+    outline: 1px solid #000;
 }
 
 .three {
     background: url("https://picsum.photos/600");
     background-position: top right;
+    outline: 1px solid #000;
 }
 
 .four {
     background: url("https://picsum.photos/600");
     background-position: center left;
+    outline: 1px solid #000;
 }
 
 .five {
     background: url("https://picsum.photos/600");
     background-position: center center;
+    outline: 1px solid #000;
 }
 
 .six {
     background: url("https://picsum.photos/600");
     background-position: center right;
+    outline: 1px solid #000;
 }
 
 .seven {
     background: url("https://picsum.photos/600");
     background-position: bottom left;
+    outline: 1px solid #000;
 }
 
 .eight {
     background: url("https://picsum.photos/600");
     background-position: bottom center;
+    outline: 1px solid #000;
 }
